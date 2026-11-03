@@ -12,6 +12,11 @@ items = []
 def health():
  return {"status": "ok"}
 
+@app.get("/nouveau")
+def nouveau():
+ return {"status": "nouveau"}
+
+
 @app.get("/items")
 def list_items():
  return items
